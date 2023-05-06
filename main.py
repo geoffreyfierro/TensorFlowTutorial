@@ -22,7 +22,7 @@ print(predictions)
 tf.nn.softmax(predictions).numpy()
 
 loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
-loss_fn(y_train[:1], predictions).numpy()
+#loss_fn(y_train[:1], predictions).numpy()
 
 model.compile(optimizer='adam',
               loss=loss_fn,
